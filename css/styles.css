@@ -1,0 +1,175 @@
+html {
+    background-color: #000000;
+}
+
+
+
+@font-face {
+    font-family: clover;
+    src: url(../fonts/SSCloverRegular_otf.otf);
+}
+
+
+h1 {
+    text-align: left;
+    /* margin-top: 200px; */
+    font-size: 1.3em;
+    font-family: clover;
+    font-weight: 700;
+    font-style: normal;
+    line-height: 1.7em;
+    padding: 100px;
+    color: #000000;
+}
+
+.link {
+  text-decoration: none;
+  color: #000000;
+  background-color: #000000;
+
+}
+
+.link:hover {
+  color: #fff100;
+}
+
+
+.strikeout {
+    text-decoration: line-through;
+}
+
+.text {
+    position: absolute;
+    width: 500px;
+    height: 195px;
+    left: 100px;
+    top: 30px;
+
+    /* cursor: default; */
+}
+
+.container01 img {
+    position: absolute;
+    width: 600px;
+   
+    left: 150px;
+    top: 100px;
+    bottom: 300px;
+    /* transform: rotate(-20.57deg); */
+    box-shadow: 0px 0px 20px #cdcdcd;
+    
+
+}
+
+.container01 {
+    position: absolute;
+    top: 30px;
+    left: 100px;
+    transform: rotate(-2.79deg);
+}
+
+.container02 {
+    position: absolute;
+    top: 30px;
+    left: 40px;
+    transform: rotate(7deg);
+}
+
+.container03 {
+    position: absolute;
+    top: 790px;
+    left: -20px;
+    transform: rotate(-13deg);
+}
+
+.container03 img {
+    position: absolute;
+    width: 480px;
+    left: 300px;
+    top: 300px;
+    bottom: 300px;
+    /* transform: rotate(-20.57deg); */
+    box-shadow: 0px 0px 20px #cdcdcd;
+}
+
+
+.text3 {
+    position: absolute;
+    width: 400px;
+    left: 235px;
+    top: 215px;
+    
+}
+
+
+.container02 img {
+    position: absolute;
+    width: 510px;
+   
+    left: 1000px;
+    top: 300px;
+    bottom: 300px;
+    /* transform: rotate(-20.57deg); */
+    box-shadow: 0px 0px 20px #cdcdcd;
+}
+
+.text2 {
+    position: absolute;
+    width: 400px;
+    height: 195px;
+    left: 950px;
+    top: 230px;
+
+    /* cursor: default; */
+}
+
+
+.main {
+    color: black;
+    font-size: xx-large;
+    font-weight: 600;
+    background-color: white;
+    width: 200px;
+    font-family: pretendard, sans-serif;
+    font-style: normal;
+    
+}
+
+.modal {
+    display: none;
+    position: absolute;
+    top: 20px;
+    left: 30px;
+  }
+
+.closeBtn {
+
+    padding: 3rem;
+    background: yellow;
+
+    z-index: 1;
+    position: absolute;
+    left: 100px;
+    top: 150px;
+    width: 30px;
+}
+
+.title-bottom {
+    position: absolute;
+    top: 1580px;
+    left: 1430px;
+    
+}
+
+.title {
+    margin-left: 10px;
+}
+
+.title-right {
+    margin-left: 10px;
+}
+
+.main a {
+    text-decoration: none;
+    color: #000000;
+}
