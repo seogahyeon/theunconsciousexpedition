@@ -64,21 +64,21 @@ h1 {
 .container01 {
     position: absolute;
     top: 30px;
-    left: 500px;
+    left: 100px;
     transform: rotate(-2.79deg);
 }
 
 .container02 {
     position: absolute;
     top: 30px;
-    left: 440px;
+    left: 40px;
     transform: rotate(7deg);
 }
 
 .container03 {
     position: absolute;
     top: 790px;
-    left: 380px;
+    left: -20px;
     transform: rotate(-13deg);
 }
 
@@ -130,7 +130,7 @@ h1 {
     font-weight: 600;
     background-color: white;
     width: 200px;
-    font-family: clover;
+ 
     font-style: normal;
     
 }
@@ -157,19 +157,41 @@ h1 {
 .title-bottom {
     position: absolute;
     top: 1580px;
-    left: 2030px;
+    left: 1430px;
     
 }
 
 .title {
     margin-left: 10px;
+    font-family: clover;
 }
 
 .title-right {
     margin-left: 10px;
+    font-family: clover;
 }
 
 .main a {
     text-decoration: none;
     color: #000000;
+    font-family: clover;
+}
+
+h2 {
+    font-family: clover;
+}
+
+@media (min-width: 1730px) {
+    .container01 {
+        left: 500px;
+    }
+    .container02 {
+        left: 440px;
+    }
+    .container03 {
+        left: 380px;
+    }
+    .title-bottom {
+        left: 1830px;
+    }
 }
