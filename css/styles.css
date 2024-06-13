@@ -1,76 +1,197 @@
+html {
+    background-color: #000000;
+}
+
+
+
+@font-face {
+    font-family: clover;
+    src: url(../fonts/SSCloverRegular_otf.otf);
+}
+
+
+h1 {
+    text-align: left;
+    /* margin-top: 200px; */
+    font-size: 1.3em;
+    font-family: clover;
+    font-weight: 700;
+    font-style: normal;
+    line-height: 1.7em;
+    padding: 100px;
+    color: #000000;
+}
+
+.link {
+  text-decoration: none;
+  color: #000000;
+  background-color: #000000;
+
+}
+
+.link:hover {
+  color: #fff100;
+}
+
+
+.strikeout {
+    text-decoration: line-through;
+}
+
+.text {
+    position: absolute;
+    width: 500px;
+    height: 195px;
+    left: 100px;
+    top: 30px;
+
+    /* cursor: default; */
+}
+
+.container01 img {
+    position: absolute;
+    width: 600px;
+   
+    left: 150px;
+    top: 100px;
+    bottom: 300px;
+    /* transform: rotate(-20.57deg); */
+    box-shadow: 0px 0px 20px #cdcdcd;
+    
+
+}
+
 .container01 {
-     position: absolute;
-     top: 30px;
-     left: 500px;
-     left: 100px;
-     transform: rotate(-2.79deg);
- }
+    position: absolute;
+    top: 30px;
+    left: 100px;
+    transform: rotate(-2.79deg);
+}
 
- .container02 {
-     position: absolute;
-     top: 30px;
-     left: 440px;
-     left: 40px;
-     transform: rotate(7deg);
- }
+.container02 {
+    position: absolute;
+    top: 30px;
+    left: 40px;
+    transform: rotate(7deg);
+}
 
- .container03 {
-     position: absolute;
-     top: 790px;
-     left: 380px;
-     left: -20px;
-     transform: rotate(-13deg);
- }
+.container03 {
+    position: absolute;
+    top: 790px;
+    left: -20px;
+    transform: rotate(-13deg);
+}
 
- @@ -130,7 +130,7 @@ h1 {
-     font-weight: 600;
-     background-color: white;
-     width: 200px;
-     font-family: clover;
+.container03 img {
+    position: absolute;
+    width: 480px;
+    left: 300px;
+    top: 300px;
+    bottom: 300px;
+    /* transform: rotate(-20.57deg); */
+    box-shadow: 0px 0px 20px #cdcdcd;
+}
 
-     font-style: normal;
 
- }
- @@ -157,19 +157,41 @@ h1 {
- .title-bottom {
-     position: absolute;
-     top: 1580px;
-     left: 2030px;
-     left: 1430px;
+.text3 {
+    position: absolute;
+    width: 400px;
+    left: 235px;
+    top: 215px;
+    
+}
 
- }
 
- .title {
-     margin-left: 10px;
-     font-family: clover;
- }
+.container02 img {
+    position: absolute;
+    width: 510px;
+   
+    left: 1000px;
+    top: 300px;
+    bottom: 300px;
+    /* transform: rotate(-20.57deg); */
+    box-shadow: 0px 0px 20px #cdcdcd;
+}
 
- .title-right {
-     margin-left: 10px;
-     font-family: clover;
- }
+.text2 {
+    position: absolute;
+    width: 400px;
+    height: 195px;
+    left: 950px;
+    top: 230px;
 
- .main a {
-     text-decoration: none;
-     color: #000000;
-     font-family: clover;
- }
+    /* cursor: default; */
+}
 
- h2 {
-     font-family: clover;
- }
 
- @media (min-width: 1730px) {
-     .container01 {
-         left: 500px;
-     }
-     .container02 {
-         left: 440px;
-     }
-     .container03 {
-         left: 380px;
-     }
-     .title-bottom {
-         left: 1830px;
-     }
- }
+.main {
+    color: black;
+    font-size: xx-large;
+    font-weight: 600;
+    background-color: white;
+    width: 200px;
+ 
+    font-style: normal;
+    
+}
+
+.modal {
+    display: none;
+    position: absolute;
+    top: 20px;
+    left: 30px;
+  }
+
+.closeBtn {
+
+    padding: 3rem;
+    background: yellow;
+
+    z-index: 1;
+    position: absolute;
+    left: 100px;
+    top: 150px;
+    width: 30px;
+}
+
+.title-bottom {
+    position: absolute;
+    top: 1580px;
+    left: 1430px;
+    
+}
+
+.title {
+    margin-left: 10px;
+    font-family: clover;
+}
+
+.title-right {
+    margin-left: 10px;
+    font-family: clover;
+}
+
+.main a {
+    text-decoration: none;
+    color: #000000;
+    font-family: clover;
+}
+
+h2 {
+    font-family: clover;
+}
+
+@media (min-width: 1730px) {
+    .container01 {
+        left: 500px;
+    }
+    .container02 {
+        left: 440px;
+    }
+    .container03 {
+        left: 380px;
+    }
+    .title-bottom {
+        left: 1830px;
+    }
+}
