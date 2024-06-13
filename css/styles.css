@@ -130,7 +130,7 @@ h1 {
     font-weight: 600;
     background-color: white;
     width: 200px;
- 
+    font-family: pretendard, sans-serif;
     font-style: normal;
     
 }
@@ -163,35 +163,13 @@ h1 {
 
 .title {
     margin-left: 10px;
-    font-family: clover;
 }
 
 .title-right {
     margin-left: 10px;
-    font-family: clover;
 }
 
 .main a {
     text-decoration: none;
     color: #000000;
-    font-family: clover;
-}
-
-h2 {
-    font-family: clover;
-}
-
-@media (min-width: 1730px) {
-    .container01 {
-        left: 500px;
-    }
-    .container02 {
-        left: 440px;
-    }
-    .container03 {
-        left: 380px;
-    }
-    .title-bottom {
-        left: 1830px;
-    }
 }
