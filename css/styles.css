@@ -1,100 +1,80 @@
-/* 기본 스타일 */
 body {
-    font-family: 'Helvetica', 'Arial', sans-serif;
+    background-color: black;
+    color: white;
     margin: 0;
-    padding: 0;
-    background-color: #f4f4f4;
-}
-
-.title, .title-right, .title-bottom {
-    text-align: center;
-    margin: 20px 0;
-}
-
-.main {
-    font-size: 2rem;
-    color: #333;
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    overflow: hidden;
 }
 
 .container {
-    position: relative;
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
 }
 
-.content {
-    position: relative;
-    margin-bottom: 40px;
+.title {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 20px;
 }
 
-.bg-image {
-    width: 100%;
-    height: auto;
-    opacity: 0.3;
-    position: absolute;
-    top: 0;
-    left: 0;
-    z-index: -1;
+.title h1 {
+    margin: 0;
+    font-size: 24px;
 }
 
-.text {
-    font-size: 1rem;
-    line-height: 1.6;
-    color: #333;
-    padding: 20px;
-    background-color: rgba(255, 255, 255, 0.8);
+.title h2 {
+    margin: 0;
+    font-size: 16px;
 }
 
-.link {
-    color: #0066cc;
-    cursor: pointer;
-    text-decoration: underline;
+.images {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
 }
 
-.strikeout {
-    text-decoration: line-through;
-}
-
-/* 반응형 스타일 */
-@media (max-width: 1200px) {
-    .main {
-        font-size: 1.8rem;
-    }
-
-    .text {
-        font-size: 0.9rem;
-    }
+.images img {
+    max-width: 100%;
+    max-height: 100%;
+    margin: 10px;
+    object-fit: cover;
+    transform: rotate(-10deg);
 }
 
 @media (max-width: 768px) {
-    .main {
-        font-size: 1.6rem;
+    .title h1 {
+        font-size: 18px;
     }
-
-    .text {
-        font-size: 0.8rem;
+    .title h2 {
+        font-size: 14px;
     }
-
-    .content {
-        padding: 10px;
+    .images img {
+        width: 90%;
+        height: auto;
+        transform: none;
     }
 }
 
-@media (max-width: 480px) {
-    .main {
-        font-size: 1.4rem;
+@media (min-width: 769px) and (max-width: 1200px) {
+    .images img {
+        width: 45%;
+        height: auto;
+        transform: rotate(-10deg);
     }
+}
 
-    .text {
-        font-size: 0.7rem;
-    }
-
-    .container, .content {
-        padding: 5px;
-    }
-
-    .text {
-        padding: 10px;
+@media (min-width: 1201px) {
+    .images img {
+        width: 30%;
+        height: auto;
+        transform: rotate(-10deg);
     }
 }
