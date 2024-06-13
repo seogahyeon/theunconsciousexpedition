@@ -2,17 +2,19 @@ html {
     background-color: #000000;
 }
 
-
-
 @font-face {
     font-family: clover;
     src: url(../fonts/SSCloverRegular_otf.otf);
 }
 
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Pretendard', sans-serif;
+}
 
 h1 {
     text-align: left;
-    /* margin-top: 200px; */
     font-size: 1.3em;
     font-family: clover;
     font-weight: 700;
@@ -23,175 +25,126 @@ h1 {
 }
 
 .link {
-  text-decoration: none;
-  color: #000000;
-  background-color: #000000;
-
+    text-decoration: none;
+    color: #000000;
+    background-color: #000000;
 }
 
 .link:hover {
-  color: #fff100;
+    color: #fff100;
 }
-
 
 .strikeout {
     text-decoration: line-through;
 }
 
 .text {
-    position: absolute;
-    width: 500px;
-    height: 195px;
-    left: 100px;
-    top: 30px;
-
-    /* cursor: default; */
+    position: relative;
+    width: 100%;
+    max-width: 500px;
+    margin: 20px auto;
 }
 
-.container01 img {
-    position: absolute;
-    width: 600px;
-   
-    left: 150px;
-    top: 100px;
-    bottom: 300px;
-    /* transform: rotate(-20.57deg); */
-    box-shadow: 0px 0px 20px #cdcdcd;
-    
-
-}
-
-.container01 {
-    position: absolute;
-    top: 30px;
-    left: 100px;
-    transform: rotate(-2.79deg);
-}
-
-.container02 {
-    position: absolute;
-    top: 30px;
-    left: 40px;
-    transform: rotate(7deg);
-}
-
-.container03 {
-    position: absolute;
-    top: 790px;
-    left: -20px;
-    transform: rotate(-13deg);
-}
-
+.container01 img,
+.container02 img,
 .container03 img {
-    position: absolute;
-    width: 480px;
-    left: 300px;
-    top: 300px;
-    bottom: 300px;
-    /* transform: rotate(-20.57deg); */
+    width: 100%;
+    height: auto;
     box-shadow: 0px 0px 20px #cdcdcd;
 }
 
+.container01,
+.container02,
+.container03 {
+    position: relative;
+    margin: 40px auto;
+    transform: none;
+}
 
+.text2,
 .text3 {
-    position: absolute;
-    width: 400px;
-    left: 235px;
-    top: 215px;
-    
+    position: relative;
+    width: 100%;
+    max-width: 400px;
+    margin: 20px auto;
 }
-
-
-.container02 img {
-    position: absolute;
-    width: 510px;
-   
-    left: 1000px;
-    top: 300px;
-    bottom: 300px;
-    /* transform: rotate(-20.57deg); */
-    box-shadow: 0px 0px 20px #cdcdcd;
-}
-
-.text2 {
-    position: absolute;
-    width: 400px;
-    height: 195px;
-    left: 950px;
-    top: 230px;
-
-    /* cursor: default; */
-}
-
 
 .main {
     color: black;
     font-size: xx-large;
     font-weight: 600;
     background-color: white;
-    width: 200px;
- 
+    width: fit-content;
+    padding: 10px 20px;
+    font-family: pretendard, sans-serif;
     font-style: normal;
-    
+    margin: 10px auto;
 }
 
 .modal {
     display: none;
-    position: absolute;
-    top: 20px;
-    left: 30px;
-  }
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    z-index: 1000;
+}
 
 .closeBtn {
-
     padding: 3rem;
     background: yellow;
-
     z-index: 1;
     position: absolute;
     left: 100px;
     top: 150px;
     width: 30px;
+    cursor: pointer;
 }
 
-.title-bottom {
-    position: absolute;
-    top: 1580px;
-    left: 1430px;
-    
-}
-
-.title {
-    margin-left: 10px;
-    font-family: clover;
-}
-
+.title-bottom,
+.title,
 .title-right {
-    margin-left: 10px;
-    font-family: clover;
+    text-align: center;
+    margin: 20px auto;
 }
 
-.main a {
+.title a {
     text-decoration: none;
     color: #000000;
-    font-family: clover;
 }
 
-h2 {
-    font-family: clover;
+@media screen and (max-width: 768px) {
+    h1 {
+        padding: 20px;
+        font-size: 1.1em;
+    }
+
+    .main {
+        font-size: x-large;
+    }
+
+    .closeBtn {
+        left: 20px;
+        top: 50px;
+    }
 }
 
-@media (min-width: 1730px) {
-    .container01 {
-        left: 500px;
+@media screen and (max-width: 480px) {
+    h1 {
+        padding: 10px;
+        font-size: 1em;
     }
-    .container02 {
-        left: 440px;
+
+    .main {
+        font-size: large;
     }
-    .container03 {
-        left: 380px;
-    }
-    .title-bottom {
-        left: 1830px;
+
+    .closeBtn {
+        left: 10px;
+        top: 20px;
+        padding: 1rem;
     }
 }
